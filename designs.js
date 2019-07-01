@@ -15,16 +15,15 @@ function makeGrid(x, y) {
 
 // Your code goes here!
   for (var i = 1; i <= x; i++) {
-      $('#pixelCanvas').append('<tr id=table' + 1 + '></tr>');
+      $('#pixelCanvas').append('<tr id=table' + i + '></tr>');
       for (var j = 1; j <=; j++) {
-          $('#table' + i).append('<td></td>');
-        
+          $('#table' + i).append('<td></td>'); 
        }
   }
 
   // adding a color
 
-  $('td').click(function addColor) {
+  $('td').click(function addColor() {
       color = $('#colorPicker').val();
 
       if ($(this).attr(style')) {
