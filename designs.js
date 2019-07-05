@@ -25,8 +25,7 @@ function makeGrid(x, y) {
 
   $('td').click(function addColor() {
       color = $('#colorPicker').val();
-      if ($(this).attr('style')) {
-          $(this).removeAttr('style')
+      if ($(this).attr('style')) 
       } else {
           $(this).attr('style', 'background-color:' + color);
       }
