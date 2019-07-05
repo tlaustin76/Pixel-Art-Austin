@@ -25,8 +25,10 @@ function makeGrid(x, y) {
 
   $('td').click(function addColor() {
       color = $('#colorPicker').val();
+      if ($(this).attr('style')) {
+          $(this).removeAttr('style')
       } else {
-          event.target.style.backgroundColor = color;
+          $(this).attr('style', 'background-color:' + color);
       }
   })
 }
