@@ -21,7 +21,7 @@ function makeGrid(x, y) {
        }
   }
 
-  // Color user picks is captured from the color picker and painted to square
+  // When the user picks a color it is captured from the color picker and painted to square
 
   $('td').click(function addColor() {
       color = $('#colorPicker').val();
